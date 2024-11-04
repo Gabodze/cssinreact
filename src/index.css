@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Medium.ttf);
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +26,92 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cards{
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card{
+  width: 23%;
+  height: auto;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card > img{
+  height: 240px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.titles{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.namePrice{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+b{
+  margin: 0;
+  color: rgb(6, 231, 92);
+}
+del{
+  color: rgb(210, 207, 207);
+  font-size: 16px;
+  font-weight: 300;
+}
+h3{
+  margin: 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span{
+  margin: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight:400;
+  opacity: 60%;
+}
+
+.btnDiv{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  border: none;
+  background-color: transparent;
+  padding: 12px 20px; 
+  font-family: Inter;
+  font-size: 16px;
+  font-weight:600;
+}
+
+.Activebtn{
+  padding: 12px 20px;
+  background-color: #005981;
+  color: white;
+  border: none;
+  border-radius: 16px;
+}
+
+.secondary{
+  /* opacity: 60%; */
+  color: #005981;
+
 }

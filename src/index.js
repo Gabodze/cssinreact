@@ -1,17 +1,96 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import './index.css'
+class Component extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <div className='cards'>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+          <div className='card'>
+            <img src="/Louvre.png" alt="Example" />
+
+            <div className='titles'>
+              <div className='namePrice'>
+                  <h3>Louvre</h3>
+                  <h3> <del>$1000</del> <b>$500</b></h3>
+
+              </div>
+              <span>Take your tour</span>
+
+              <div className='btnDiv'>
+                <button className='Activebtn'>Buy ticket</button>
+
+                <button className='secondary'>Add person</button>
+              </div>
+            </div>
+          
+          </div>
+          
+          
+          <div className='card'>
+            <img src="/2.png" alt="Example" />
+
+            <div className='titles'>
+              <div className='namePrice'>
+                  <h3>Louvre</h3>
+                  <h3> <del>$1000</del> <b>$500</b></h3>
+
+              </div>
+              <span>Take your tour</span>
+
+              <div className='btnDiv'>
+                <button className='Activebtn'>Buy ticket</button>
+
+                <button className='secondary'>Add person</button>
+              </div>
+            </div>
+          
+          </div>
+          <div className='card'>
+            <img src="/3.png" alt="Example" />
+
+            <div className='titles'>
+              <div className='namePrice'>
+                  <h3>Louvre</h3>
+                  <h3> <del>$1000</del> <b>$500</b></h3>
+
+              </div>
+              <span>Take your tour</span>
+
+              <div className='btnDiv'>
+                <button className='Activebtn'>Buy ticket</button>
+
+                <button className='secondary'>Add person</button>
+              </div>
+            </div>
+          
+          </div>
+          <div className='card'>
+            <img src="/4.png" alt="Example" />
+
+            <div className='titles'>
+              <div className='namePrice'>
+                  <h3>Louvre</h3>
+                  <h3> <del>$1000</del> <b>$500</b></h3>
+
+              </div>
+              <span>Take your tour</span>
+
+              <div className='btnDiv'>
+                <button className='Activebtn'>Buy ticket</button>
+
+                <button className='secondary'>Add person</button>
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+      </React.Fragment>
+    );
+  }
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Component />);
